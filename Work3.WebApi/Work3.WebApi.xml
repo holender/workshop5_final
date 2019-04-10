@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Work3.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Work3.WebApi.AppSettings">
+            <summary>
+            AppSettings Class
+            </summary>
+        </member>
+        <member name="P:Work3.WebApi.AppSettings.Secret">
+            <summary>
+            Secret
+            </summary>
+        </member>
+        <member name="M:Work3.WebApi.Controllers.TestController.Hello">
+            <summary>
+            Some Hello Controller
+            </summary>
+            <returns>returns string hello</returns>
+        </member>
+        <member name="T:Work3.WebApi.Services.IUserService">
+            <summary>
+            User Services
+            </summary>
+        </member>
+        <member name="M:Work3.WebApi.Services.IUserService.Authenticate(System.String,System.String)">
+            <summary>
+            Authenticate
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Work3.WebApi.Services.IUserService.GetAll">
+            <summary>
+            Get All
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Work3.WebApi.Services.IUserService.GetById(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Work3.WebApi.Services.UserService">
+            <summary>
+            User Service
+            </summary>
+        </member>
+    </members>
+</doc>

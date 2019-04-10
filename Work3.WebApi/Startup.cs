@@ -56,7 +56,10 @@ namespace Work3.WebApi
 					In = "header",
 					Type = "apiKey"
 				});
-
+				c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
+				{
+					{ "Bearer", new string[] { } }
+				});
 
 				var filePath = Path.Combine(System.AppContext.BaseDirectory, "Work3.WebApi.xml");
 
@@ -106,7 +109,7 @@ namespace Work3.WebApi
 				.AllowAnyHeader());
 
 			app.UseAuthentication();
-			app.UseMvc();
+			app.UseMvc(r=>r.MapRoute("default", "swagger/index.html"));
 			app.UseSwagger();
 			app.UseSwaggerUI(c =>
 			{
